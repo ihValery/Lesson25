@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8088EA622615EBBA001FCEAE /* Lesson25Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088EA612615EBBA001FCEAE /* Lesson25Tests.swift */; };
 		80A2600F2615CB8D00ADDB6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A2600E2615CB8D00ADDB6E /* AppDelegate.swift */; };
 		80A260112615CB8D00ADDB6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A260102615CB8D00ADDB6E /* SceneDelegate.swift */; };
 		80A260132615CB8D00ADDB6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A260122615CB8D00ADDB6E /* ViewController.swift */; };
@@ -15,7 +16,20 @@
 		80A2601B2615CB9000ADDB6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A260192615CB9000ADDB6E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8088EA642615EBBA001FCEAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80A260032615CB8D00ADDB6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80A2600A2615CB8D00ADDB6E;
+			remoteInfo = Lesson25;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		8088EA5F2615EBBA001FCEAE /* Lesson25Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lesson25Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8088EA612615EBBA001FCEAE /* Lesson25Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson25Tests.swift; sourceTree = "<group>"; };
+		8088EA632615EBBA001FCEAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80A2600B2615CB8D00ADDB6E /* Lesson25.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson25.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A2600E2615CB8D00ADDB6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80A260102615CB8D00ADDB6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8088EA5C2615EBBA001FCEAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80A260082615CB8D00ADDB6E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,10 +86,20 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8088EA602615EBBA001FCEAE /* Lesson25Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8088EA612615EBBA001FCEAE /* Lesson25Tests.swift */,
+				8088EA632615EBBA001FCEAE /* Info.plist */,
+			);
+			path = Lesson25Tests;
+			sourceTree = "<group>";
+		};
 		80A260022615CB8D00ADDB6E = {
 			isa = PBXGroup;
 			children = (
 				80A2600D2615CB8D00ADDB6E /* Lesson25 */,
+				8088EA602615EBBA001FCEAE /* Lesson25Tests */,
 				80A2600C2615CB8D00ADDB6E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				80A2600B2615CB8D00ADDB6E /* Lesson25.app */,
+				8088EA5F2615EBBA001FCEAE /* Lesson25Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +126,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8088EA5E2615EBBA001FCEAE /* Lesson25Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8088EA682615EBBA001FCEAE /* Build configuration list for PBXNativeTarget "Lesson25Tests" */;
+			buildPhases = (
+				8088EA5B2615EBBA001FCEAE /* Sources */,
+				8088EA5C2615EBBA001FCEAE /* Frameworks */,
+				8088EA5D2615EBBA001FCEAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8088EA652615EBBA001FCEAE /* PBXTargetDependency */,
+			);
+			name = Lesson25Tests;
+			productName = Lesson25Tests;
+			productReference = 8088EA5F2615EBBA001FCEAE /* Lesson25Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		80A2600A2615CB8D00ADDB6E /* Lesson25 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80A2601F2615CB9000ADDB6E /* Build configuration list for PBXNativeTarget "Lesson25" */;
@@ -120,6 +170,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					8088EA5E2615EBBA001FCEAE = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 80A2600A2615CB8D00ADDB6E;
+					};
 					80A2600A2615CB8D00ADDB6E = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -139,11 +193,19 @@
 			projectRoot = "";
 			targets = (
 				80A2600A2615CB8D00ADDB6E /* Lesson25 */,
+				8088EA5E2615EBBA001FCEAE /* Lesson25Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8088EA5D2615EBBA001FCEAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80A260092615CB8D00ADDB6E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,6 +219,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8088EA5B2615EBBA001FCEAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8088EA622615EBBA001FCEAE /* Lesson25Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80A260072615CB8D00ADDB6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,6 +238,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8088EA652615EBBA001FCEAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80A2600A2615CB8D00ADDB6E /* Lesson25 */;
+			targetProxy = 8088EA642615EBBA001FCEAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		80A260142615CB8D00ADDB6E /* Main.storyboard */ = {
@@ -189,6 +267,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8088EA662615EBBA001FCEAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 879U287R5Q;
+				INFOPLIST_FILE = Lesson25Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ihValery.Lesson25Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lesson25.app/Lesson25";
+			};
+			name = Debug;
+		};
+		8088EA672615EBBA001FCEAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 879U287R5Q;
+				INFOPLIST_FILE = Lesson25Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ihValery.Lesson25Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lesson25.app/Lesson25";
+			};
+			name = Release;
+		};
 		80A2601D2615CB9000ADDB6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -350,6 +468,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8088EA682615EBBA001FCEAE /* Build configuration list for PBXNativeTarget "Lesson25Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8088EA662615EBBA001FCEAE /* Debug */,
+				8088EA672615EBBA001FCEAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		80A260062615CB8D00ADDB6E /* Build configuration list for PBXProject "Lesson25" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
