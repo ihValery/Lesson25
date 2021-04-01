@@ -17,6 +17,8 @@
 		80A260162615CB8D00ADDB6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A260142615CB8D00ADDB6E /* Main.storyboard */; };
 		80A260182615CB9000ADDB6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A260172615CB9000ADDB6E /* Assets.xcassets */; };
 		80A2601B2615CB9000ADDB6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A260192615CB9000ADDB6E /* LaunchScreen.storyboard */; };
+		80D6179B2616274000EF5B09 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6179A2616274000EF5B09 /* Location.swift */; };
+		80D617A026162ADB00EF5B09 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6179F26162ADB00EF5B09 /* LocationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		80A260172615CB9000ADDB6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80A2601A2615CB9000ADDB6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80A2601C2615CB9000ADDB6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80D6179A2616274000EF5B09 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		80D6179F26162ADB00EF5B09 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				808BA8BC261615B200274534 /* Task.swift */,
+				80D6179A2616274000EF5B09 /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				808BA8B3261614BC00274534 /* TaskTests.swift */,
+				80D6179F26162ADB00EF5B09 /* LocationTests.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				808BA8B4261614BC00274534 /* TaskTests.swift in Sources */,
+				80D617A026162ADB00EF5B09 /* LocationTests.swift in Sources */,
 				8088EA622615EBBA001FCEAE /* Lesson25Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +330,7 @@
 			files = (
 				808BA8BD261615B200274534 /* Task.swift in Sources */,
 				80A260132615CB8D00ADDB6E /* ViewController.swift in Sources */,
+				80D6179B2616274000EF5B09 /* Location.swift in Sources */,
 				80A2600F2615CB8D00ADDB6E /* AppDelegate.swift in Sources */,
 				80A260112615CB8D00ADDB6E /* SceneDelegate.swift in Sources */,
 			);
