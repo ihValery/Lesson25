@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		805256702616703E006F6530 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8052566F2616703E006F6530 /* DataProvider.swift */; };
 		8088EA622615EBBA001FCEAE /* Lesson25Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088EA612615EBBA001FCEAE /* Lesson25Tests.swift */; };
 		808BA8A8261611B100274534 /* Lesson25UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808BA8A7261611B100274534 /* Lesson25UITests.swift */; };
 		808BA8B4261614BC00274534 /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808BA8B3261614BC00274534 /* TaskTests.swift */; };
 		808BA8BD261615B200274534 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808BA8BC261615B200274534 /* Task.swift */; };
 		80A2600F2615CB8D00ADDB6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A2600E2615CB8D00ADDB6E /* AppDelegate.swift */; };
 		80A260112615CB8D00ADDB6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A260102615CB8D00ADDB6E /* SceneDelegate.swift */; };
-		80A260132615CB8D00ADDB6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A260122615CB8D00ADDB6E /* ViewController.swift */; };
+		80A260132615CB8D00ADDB6E /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A260122615CB8D00ADDB6E /* TaskListViewController.swift */; };
 		80A260162615CB8D00ADDB6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A260142615CB8D00ADDB6E /* Main.storyboard */; };
 		80A260182615CB9000ADDB6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A260172615CB9000ADDB6E /* Assets.xcassets */; };
 		80A2601B2615CB9000ADDB6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A260192615CB9000ADDB6E /* LaunchScreen.storyboard */; };
@@ -21,6 +22,7 @@
 		80D617A026162ADB00EF5B09 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6179F26162ADB00EF5B09 /* LocationTests.swift */; };
 		80D617A626163BFB00EF5B09 /* TaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D617A526163BFB00EF5B09 /* TaskManagerTests.swift */; };
 		80D617AF26163CA200EF5B09 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D617AE26163CA200EF5B09 /* TaskManager.swift */; };
+		80D617B62616671E00EF5B09 /* TaskListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D617B52616671E00EF5B09 /* TaskListViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8052566F2616703E006F6530 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		8088EA5F2615EBBA001FCEAE /* Lesson25Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lesson25Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8088EA612615EBBA001FCEAE /* Lesson25Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson25Tests.swift; sourceTree = "<group>"; };
 		8088EA632615EBBA001FCEAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,7 +55,7 @@
 		80A2600B2615CB8D00ADDB6E /* Lesson25.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson25.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A2600E2615CB8D00ADDB6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80A260102615CB8D00ADDB6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		80A260122615CB8D00ADDB6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80A260122615CB8D00ADDB6E /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		80A260152615CB8D00ADDB6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80A260172615CB9000ADDB6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80A2601A2615CB9000ADDB6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +64,7 @@
 		80D6179F26162ADB00EF5B09 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		80D617A526163BFB00EF5B09 /* TaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTests.swift; sourceTree = "<group>"; };
 		80D617AE26163CA200EF5B09 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		80D617B52616671E00EF5B09 /* TaskListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +107,8 @@
 		807E7E142615E18D00F4C366 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				80A260122615CB8D00ADDB6E /* ViewController.swift */,
+				80A260122615CB8D00ADDB6E /* TaskListViewController.swift */,
+				8052566F2616703E006F6530 /* DataProvider.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -119,9 +124,10 @@
 		8088EA602615EBBA001FCEAE /* Lesson25Tests */ = {
 			isa = PBXGroup;
 			children = (
+				808BA8BB261614CF00274534 /* Model */,
+				80D617B4261666E200EF5B09 /* Controller */,
 				8088EA612615EBBA001FCEAE /* Lesson25Tests.swift */,
 				8088EA632615EBBA001FCEAE /* Info.plist */,
-				808BA8BB261614CF00274534 /* Model */,
 				80D617A426163BCB00EF5B09 /* Manager */,
 			);
 			path = Lesson25Tests;
@@ -177,10 +183,10 @@
 		80A2600D2615CB8D00ADDB6E /* Lesson25 */ = {
 			isa = PBXGroup;
 			children = (
-				80D617AD26163C9300EF5B09 /* Manager */,
 				808BA8B2261612D500274534 /* Model */,
-				807E7E142615E18D00F4C366 /* Controller */,
 				807E7E162615E19600F4C366 /* View */,
+				807E7E142615E18D00F4C366 /* Controller */,
+				80D617AD26163C9300EF5B09 /* Manager */,
 				807E7E122615E16B00F4C366 /* System32 */,
 			);
 			path = Lesson25;
@@ -200,6 +206,14 @@
 				80D617AE26163CA200EF5B09 /* TaskManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		80D617B4261666E200EF5B09 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80D617B52616671E00EF5B09 /* TaskListViewControllerTests.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +349,7 @@
 				808BA8B4261614BC00274534 /* TaskTests.swift in Sources */,
 				80D617A026162ADB00EF5B09 /* LocationTests.swift in Sources */,
 				80D617A626163BFB00EF5B09 /* TaskManagerTests.swift in Sources */,
+				80D617B62616671E00EF5B09 /* TaskListViewControllerTests.swift in Sources */,
 				8088EA622615EBBA001FCEAE /* Lesson25Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,7 +368,8 @@
 			files = (
 				80D617AF26163CA200EF5B09 /* TaskManager.swift in Sources */,
 				808BA8BD261615B200274534 /* Task.swift in Sources */,
-				80A260132615CB8D00ADDB6E /* ViewController.swift in Sources */,
+				80A260132615CB8D00ADDB6E /* TaskListViewController.swift in Sources */,
+				805256702616703E006F6530 /* DataProvider.swift in Sources */,
 				80D6179B2616274000EF5B09 /* Location.swift in Sources */,
 				80A2600F2615CB8D00ADDB6E /* AppDelegate.swift in Sources */,
 				80A260112615CB8D00ADDB6E /* SceneDelegate.swift in Sources */,

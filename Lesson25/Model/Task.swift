@@ -24,7 +24,7 @@ extension Task: Equatable {
            lhs.description == rhs.description &&
            lhs.location == rhs.location {
             
-            return true
+           return true
         }
         return false
     }
