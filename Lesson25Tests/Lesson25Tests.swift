@@ -1,17 +1,14 @@
 import XCTest
 @testable import Lesson25
 
-class Lesson25Tests: XCTestCase
-{
+class Lesson25Tests: XCTestCase {
     
-    override func setUpWithError() throws
-    {
+    override func setUpWithError() throws {
         super.setUp()
 
     }
 
-    override func tearDownWithError() throws
-    {
+    override func tearDownWithError() throws {
         
         super.tearDown()
     }
