@@ -37,6 +37,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		807E7E122615E16B00F4C366 /* System32 */ = {
+			isa = PBXGroup;
+			children = (
+				80A2600E2615CB8D00ADDB6E /* AppDelegate.swift */,
+				80A260102615CB8D00ADDB6E /* SceneDelegate.swift */,
+				80A260172615CB9000ADDB6E /* Assets.xcassets */,
+				80A260192615CB9000ADDB6E /* LaunchScreen.storyboard */,
+				80A2601C2615CB9000ADDB6E /* Info.plist */,
+			);
+			path = System32;
+			sourceTree = "<group>";
+		};
+		807E7E142615E18D00F4C366 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80A260122615CB8D00ADDB6E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		807E7E162615E19600F4C366 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80A260142615CB8D00ADDB6E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		80A260022615CB8D00ADDB6E = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +84,9 @@
 		80A2600D2615CB8D00ADDB6E /* Lesson25 */ = {
 			isa = PBXGroup;
 			children = (
-				80A2600E2615CB8D00ADDB6E /* AppDelegate.swift */,
-				80A260102615CB8D00ADDB6E /* SceneDelegate.swift */,
-				80A260122615CB8D00ADDB6E /* ViewController.swift */,
-				80A260142615CB8D00ADDB6E /* Main.storyboard */,
-				80A260172615CB9000ADDB6E /* Assets.xcassets */,
-				80A260192615CB9000ADDB6E /* LaunchScreen.storyboard */,
-				80A2601C2615CB9000ADDB6E /* Info.plist */,
+				807E7E142615E18D00F4C366 /* Controller */,
+				807E7E162615E19600F4C366 /* View */,
+				807E7E122615E16B00F4C366 /* System32 */,
 			);
 			path = Lesson25;
 			sourceTree = "<group>";
@@ -287,12 +311,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 104;
 				DEVELOPMENT_TEAM = 879U287R5Q;
-				INFOPLIST_FILE = Lesson25/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Lesson25/System32/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = ihValery.Lesson25;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -306,12 +332,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 104;
 				DEVELOPMENT_TEAM = 879U287R5Q;
-				INFOPLIST_FILE = Lesson25/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Lesson25/System32/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = ihValery.Lesson25;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
