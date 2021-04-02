@@ -1,6 +1,7 @@
 import UIKit
 
-enum Section: Int {
+//CaseIterable - предоставляет коллекцию всех своих значений.
+enum Section: Int, CaseIterable {
     case todo
     case done
 }
@@ -19,7 +20,7 @@ extension DataProvider: UITableViewDelegate {
 extension DataProvider: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return Section.allCases.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,6 +39,16 @@ extension DataProvider: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath) as! TaskCell
+        
+        guard let section = Section(rawValue: indexPath.section) else { fatalError() }
+        guard let taskManager = taskManager else { fatalError() }
+        
+        let task: Task
+        switch section {
+            case .todo: task = taskManager.task(at: indexPath.row)
+            case .done: task = taskManager.doneTask(at: indexPath.row)
+        }
+        cell.configure(withTask: task)
         
         return cell
     }
