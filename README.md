@@ -5,6 +5,7 @@
  - 06. TaskLocationProperty. Создали вложенную структуру с GEO данными (Проверили инициализацию - проваливали тесты)
  - 07. TaskManager. Добавление, удаление, чек тасков. (Добавление уникальной Task'ки - !tasks.contains(task) - время записываешься с наносекундами!)(Переопределение протокола Equatable - сравнивание моделей (исключили время)) 3 части
  - 10. TaskListViewController. Установили объект DataProvider: NSObject. (Назначили его Delegate и DataSource)(Но сначала тесты) 2 части
+ - 12. DataProvider. Добрались до DataSource Реализовали стандартные методы после написания тестов. (numberOfSections - numberOfRowsInSection - cellForRowAt)
 
 Схема и сущности
 
