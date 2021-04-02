@@ -18,6 +18,8 @@
 		80A260162615CB8D00ADDB6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A260142615CB8D00ADDB6E /* Main.storyboard */; };
 		80A260182615CB9000ADDB6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A260172615CB9000ADDB6E /* Assets.xcassets */; };
 		80A2601B2615CB9000ADDB6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A260192615CB9000ADDB6E /* LaunchScreen.storyboard */; };
+		80BD9A7926172EB100CEF695 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BD9A7826172EB100CEF695 /* DataProviderTests.swift */; };
+		80BD9A7E2617442500CEF695 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BD9A7D2617442500CEF695 /* TaskCell.swift */; };
 		80D6179B2616274000EF5B09 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6179A2616274000EF5B09 /* Location.swift */; };
 		80D617A026162ADB00EF5B09 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6179F26162ADB00EF5B09 /* LocationTests.swift */; };
 		80D617A626163BFB00EF5B09 /* TaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D617A526163BFB00EF5B09 /* TaskManagerTests.swift */; };
@@ -60,6 +62,8 @@
 		80A260172615CB9000ADDB6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80A2601A2615CB9000ADDB6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80A2601C2615CB9000ADDB6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80BD9A7826172EB100CEF695 /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
+		80BD9A7D2617442500CEF695 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		80D6179A2616274000EF5B09 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		80D6179F26162ADB00EF5B09 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		80D617A526163BFB00EF5B09 /* TaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTests.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				80A260142615CB8D00ADDB6E /* Main.storyboard */,
+				80BD9A7D2617442500CEF695 /* TaskCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				80D617B52616671E00EF5B09 /* TaskListViewControllerTests.swift */,
+				80BD9A7826172EB100CEF695 /* DataProviderTests.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -348,6 +354,7 @@
 			files = (
 				808BA8B4261614BC00274534 /* TaskTests.swift in Sources */,
 				80D617A026162ADB00EF5B09 /* LocationTests.swift in Sources */,
+				80BD9A7926172EB100CEF695 /* DataProviderTests.swift in Sources */,
 				80D617A626163BFB00EF5B09 /* TaskManagerTests.swift in Sources */,
 				80D617B62616671E00EF5B09 /* TaskListViewControllerTests.swift in Sources */,
 				8088EA622615EBBA001FCEAE /* Lesson25Tests.swift in Sources */,
@@ -370,6 +377,7 @@
 				808BA8BD261615B200274534 /* Task.swift in Sources */,
 				80A260132615CB8D00ADDB6E /* TaskListViewController.swift in Sources */,
 				805256702616703E006F6530 /* DataProvider.swift in Sources */,
+				80BD9A7E2617442500CEF695 /* TaskCell.swift in Sources */,
 				80D6179B2616274000EF5B09 /* Location.swift in Sources */,
 				80A2600F2615CB8D00ADDB6E /* AppDelegate.swift in Sources */,
 				80A260112615CB8D00ADDB6E /* SceneDelegate.swift in Sources */,
