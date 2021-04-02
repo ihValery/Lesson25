@@ -20,6 +20,7 @@
 		80A2601B2615CB9000ADDB6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A260192615CB9000ADDB6E /* LaunchScreen.storyboard */; };
 		80BD9A7926172EB100CEF695 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BD9A7826172EB100CEF695 /* DataProviderTests.swift */; };
 		80BD9A7E2617442500CEF695 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BD9A7D2617442500CEF695 /* TaskCell.swift */; };
+		80BD9A842617BEF800CEF695 /* TaskCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BD9A832617BEF800CEF695 /* TaskCellTests.swift */; };
 		80D6179B2616274000EF5B09 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6179A2616274000EF5B09 /* Location.swift */; };
 		80D617A026162ADB00EF5B09 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6179F26162ADB00EF5B09 /* LocationTests.swift */; };
 		80D617A626163BFB00EF5B09 /* TaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D617A526163BFB00EF5B09 /* TaskManagerTests.swift */; };
@@ -64,6 +65,7 @@
 		80A2601C2615CB9000ADDB6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80BD9A7826172EB100CEF695 /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
 		80BD9A7D2617442500CEF695 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		80BD9A832617BEF800CEF695 /* TaskCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellTests.swift; sourceTree = "<group>"; };
 		80D6179A2616274000EF5B09 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		80D6179F26162ADB00EF5B09 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		80D617A526163BFB00EF5B09 /* TaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTests.swift; sourceTree = "<group>"; };
@@ -130,10 +132,11 @@
 			isa = PBXGroup;
 			children = (
 				808BA8BB261614CF00274534 /* Model */,
+				80BD9A822617BECD00CEF695 /* View */,
 				80D617B4261666E200EF5B09 /* Controller */,
+				80D617A426163BCB00EF5B09 /* Manager */,
 				8088EA612615EBBA001FCEAE /* Lesson25Tests.swift */,
 				8088EA632615EBBA001FCEAE /* Info.plist */,
-				80D617A426163BCB00EF5B09 /* Manager */,
 			);
 			path = Lesson25Tests;
 			sourceTree = "<group>";
@@ -195,6 +198,14 @@
 				807E7E122615E16B00F4C366 /* System32 */,
 			);
 			path = Lesson25;
+			sourceTree = "<group>";
+		};
+		80BD9A822617BECD00CEF695 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80BD9A832617BEF800CEF695 /* TaskCellTests.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		80D617A426163BCB00EF5B09 /* Manager */ = {
@@ -354,6 +365,7 @@
 			files = (
 				808BA8B4261614BC00274534 /* TaskTests.swift in Sources */,
 				80D617A026162ADB00EF5B09 /* LocationTests.swift in Sources */,
+				80BD9A842617BEF800CEF695 /* TaskCellTests.swift in Sources */,
 				80BD9A7926172EB100CEF695 /* DataProviderTests.swift in Sources */,
 				80D617A626163BFB00EF5B09 /* TaskManagerTests.swift in Sources */,
 				80D617B62616671E00EF5B09 /* TaskListViewControllerTests.swift in Sources */,
