@@ -5,13 +5,20 @@ class DataProviderTests: XCTestCase {
     
     var sut: DataProvider!
     var tableView: UITableView!
+    
+    //Что бы получить tableView со storyboarda
+    var controller: TaskListViewController!
 
     override func setUpWithError() throws {
         super.setUp()
         sut = DataProvider()
         sut.taskManager = TaskManager()
         
-        tableView = UITableView()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        controller = storyboard.instantiateViewController(identifier: "TaskListViewController") as? TaskListViewController
+        controller.loadViewIfNeeded()
+        
+        tableView = controller.tableView
         tableView.dataSource = sut
     }
 
@@ -56,5 +63,33 @@ class DataProviderTests: XCTestCase {
         let cell = tableView.cellForRow(at: IndexPath(row: 0, section: 0))
         
         XCTAssertTrue(cell is TaskCell)
+    }
+    
+    func testCellForRowAtIndexPathDequeuesCellFromTableView() {
+        let mockTableView = MockTableView()
+        mockTableView.dataSource = sut
+        
+        mockTableView.register(TaskCell.self, forCellReuseIdentifier: "taskCell")
+        sut.taskManager?.add(task: Task(title: "Foo"))
+        mockTableView.reloadData()
+        
+        _ = mockTableView.cellForRow(at: IndexPath(row: 0, section: 0))
+        XCTAssertTrue(mockTableView.cellIsDequeued)
+    }
+}
+
+extension DataProviderTests {
+    //Здесь класс, что бы ограничеть его облать видимости
+    //Подменим наш tableView - MockTableView со свойством которое подскажет переиспользуем cell или нет
+    class MockTableView: UITableView {
+        //Исключен из очереди(Переиспользуется)
+        var cellIsDequeued = false
+        
+        //Удалить из очереди многоразовую ячейку
+        override func dequeueReusableCell(withIdentifier identifier: String, for indexPath: IndexPath) -> UITableViewCell {
+            cellIsDequeued = true
+            
+            return super.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+        }
     }
 }
