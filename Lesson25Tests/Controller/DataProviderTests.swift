@@ -21,6 +21,7 @@ class DataProviderTests: XCTestCase {
         
         tableView = controller.tableView
         tableView.dataSource = sut
+        tableView.delegate = sut
         
         mockTableView = MockTableView.mockTableView(withDataSource: sut)
     }
@@ -100,6 +101,40 @@ class DataProviderTests: XCTestCase {
         let cell = mockTableView.cellForRow(at: IndexPath(row: 0, section: 1)) as! MockTaskCell
         
         XCTAssertEqual(cell.task, taskForTest)
+    }
+    
+    func testDeleteButtonTitleSectionZeroShowsDone() {
+        let buttonTitle = tableView.delegate?.tableView?(tableView, titleForDeleteConfirmationButtonForRowAt: IndexPath(row: 0, section: 0))
+        
+        XCTAssertEqual(buttonTitle, "Done")
+    }
+    
+    func testDeleteButtonTitleSectionOneShowsDone() {
+        let buttonTitle = tableView.delegate?.tableView?(tableView, titleForDeleteConfirmationButtonForRowAt: IndexPath(row: 0, section: 1))
+        
+        XCTAssertEqual(buttonTitle, "Undone")
+    }
+    
+    func testCheckingTaskChecksInTaskManager() {
+        let task = Task(title: "Foo")
+        sut.taskManager?.add(task: task)
+        
+        tableView.dataSource?.tableView?(tableView, commit: .delete, forRowAt: IndexPath(row: 0, section: 0))
+        
+        XCTAssertEqual(sut.taskManager?.tasksCount, 0)
+        XCTAssertEqual(sut.taskManager?.tasksDoneCount, 1)
+    }
+    
+    func testUncheckingTaskUncheckInTaskManager() {
+        let task = Task(title: "Foo")
+        sut.taskManager?.add(task: task)
+        sut.taskManager?.checkTask(at: 0)
+        tableView.reloadData()
+        
+        tableView.dataSource?.tableView?(tableView, commit: .delete, forRowAt: IndexPath(row: 0, section: 1))
+
+        XCTAssertEqual(sut.taskManager?.tasksDoneCount, 0)
+        XCTAssertEqual(sut.taskManager?.tasksCount, 1)
     }
 }
 
