@@ -76,6 +76,32 @@ class DataProviderTests: XCTestCase {
         _ = mockTableView.cellForRow(at: IndexPath(row: 0, section: 0))
         XCTAssertTrue(mockTableView.cellIsDequeued)
     }
+    
+    //Проверка срабатывает ли в нулевой секции метод configure(withTask task: Task)
+    func testCellForRowsInSectionZeroCallsConfigure() {
+        tableView.register(MockTaskCell.self, forCellReuseIdentifier: "taskCell")
+        
+        let taskForTest = Task(title: "Foo")
+        sut.taskManager?.add(task: taskForTest)
+        tableView.reloadData()
+        
+        let cell = tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as! MockTaskCell
+        
+        XCTAssertEqual(cell.task, taskForTest)
+    }
+    
+    func testCellForRowsInSectionOneCallsConfigure() {
+        tableView.register(MockTaskCell.self, forCellReuseIdentifier: "taskCell")
+        
+        let taskForTest = Task(title: "Foo")
+        sut.taskManager?.add(task: taskForTest)
+        sut.taskManager?.checkTask(at: 0)
+        tableView.reloadData()
+        
+        let cell = tableView.cellForRow(at: IndexPath(row: 0, section: 1)) as! MockTaskCell
+        
+        XCTAssertEqual(cell.task, taskForTest)
+    }
 }
 
 extension DataProviderTests {
@@ -90,6 +116,15 @@ extension DataProviderTests {
             cellIsDequeued = true
             
             return super.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+        }
+    }
+    
+    class MockTaskCell: TaskCell {
+        
+        var task: Task?
+        
+        override func configure(withTask task: Task) {
+            self.task = task
         }
     }
 }
