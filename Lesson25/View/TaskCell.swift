@@ -23,8 +23,7 @@ class TaskCell: UITableViewCell {
             self.titleLabel.text = task.title
             self.locationLabel.text = task.location?.name
             
-            guard let date = task.date else { return }
-            let dateString = dateFormatter.string(from: date)
+            let dateString = dateFormatter.string(from: task.date)
             dateLabel.text = dateString
         }
     }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		805256702616703E006F6530 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8052566F2616703E006F6530 /* DataProvider.swift */; };
-		8088EA622615EBBA001FCEAE /* Lesson25Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088EA612615EBBA001FCEAE /* Lesson25Tests.swift */; };
 		808BA8A8261611B100274534 /* Lesson25UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808BA8A7261611B100274534 /* Lesson25UITests.swift */; };
 		808BA8B4261614BC00274534 /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808BA8B3261614BC00274534 /* TaskTests.swift */; };
 		808BA8BD261615B200274534 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808BA8BC261615B200274534 /* Task.swift */; };
@@ -50,7 +49,6 @@
 /* Begin PBXFileReference section */
 		8052566F2616703E006F6530 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		8088EA5F2615EBBA001FCEAE /* Lesson25Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lesson25Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8088EA612615EBBA001FCEAE /* Lesson25Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson25Tests.swift; sourceTree = "<group>"; };
 		8088EA632615EBBA001FCEAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		808BA8A5261611B100274534 /* Lesson25UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lesson25UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		808BA8A7261611B100274534 /* Lesson25UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson25UITests.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				80BD9A822617BECD00CEF695 /* View */,
 				80D617B4261666E200EF5B09 /* Controller */,
 				80D617A426163BCB00EF5B09 /* Manager */,
-				8088EA612615EBBA001FCEAE /* Lesson25Tests.swift */,
 				8088EA632615EBBA001FCEAE /* Info.plist */,
 			);
 			path = Lesson25Tests;
@@ -375,7 +372,6 @@
 				80BD9A7926172EB100CEF695 /* DataProviderTests.swift in Sources */,
 				80D617A626163BFB00EF5B09 /* TaskManagerTests.swift in Sources */,
 				80D617B62616671E00EF5B09 /* TaskListViewControllerTests.swift in Sources */,
-				8088EA622615EBBA001FCEAE /* Lesson25Tests.swift in Sources */,
 				80EC06AC26186A1E00D1B77C /* DetailViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
