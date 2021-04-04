@@ -13,6 +13,12 @@
  - 20. CheckAndUnckeckFunctionality. Проверка что tasks могут бегать из секции в секцию )))
  - 21. CheckTitleLabelInCell. Проверка на Находиться ли titleLabel ячейки внутри cell.contentView (isDescendant) + LocationLabel
  - 22. CellConfigureTests. Реализовали тесты и функционал для заполнения ячейки. (Title - Date (через DateFormatter) - Location)
+ - 23. DoneTaskStyle. Сконфигурировали ячейку под секции. (NSAttributedString - запоминаем пользуемся) (Выполненая задача будет зачеркнута)
+ - 24. DetailViewControllerElements. Создали DetailViewController (Со всеми Label’ми) (Подключили MapKit)
+ - 25. TestingLabelsOnDetailViewController . Тесты для всех лейблов в DetailViewController. (coordinate - location - date(timeIntervalSince1970))
+ - 26. DateLabelAndMapViewTests.  Разобрались как работать с датами. (Проверили что даты отображаются в нужном формате. Разобрались как mapView отображает необходимую нам область)
+ - 27. ControllerForNewTasks.  Создали новый InputTaskViewController. (Накидали UITextField и Button) (Сначала тест что такое свойство есть, а следом тест что оно лежит на view)
+ - 29. GettingCoordinatesFromGeocoder. Создали мини проек Geocoder (Optional(53.896196) Optional(27.5503093)) (Реализовали БОЛЬШОЙ тест при заполнении новой task’и)
 
 Схема и сущности
 
