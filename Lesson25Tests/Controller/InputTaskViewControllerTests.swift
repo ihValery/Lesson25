@@ -109,6 +109,31 @@ class InputTaskViewControllerTests: XCTestCase {
         }
         XCTAssertTrue(action.contains("save"))
     }
+    
+    func testGeocoderFetchesCorrectCoordinate() {
+        //Ожижание
+        let geocoderAnswer = expectation(description: "Geocoder answer")
+        let addressString = "Минск"
+        let geocoder = CLGeocoder()
+    
+        geocoder.geocodeAddressString(addressString) { (placemarks, error) in
+            let placemark = placemarks?.first
+            let location = placemark?.location
+            
+            guard let latitude = location?.coordinate.latitude,
+                  let longitude = location?.coordinate.longitude else {
+                XCTFail()
+                return
+            }
+            XCTAssertEqual(latitude, 53.896196)
+            XCTAssertEqual(longitude, 27.5503093)
+            //Удовлетвояет ожидание
+            geocoderAnswer.fulfill()
+        }
+        //Тайминг для ожидания - малол ли интернет плохой ))
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
 }
 
 //Фейковый класс (типо замена инета)
