@@ -25,8 +25,14 @@ class APIClient {
         let query = "name=\(name)&password=\(password)"
         
         guard let url = URL(string: "https://Lesson25.com/login?\(query)") else { fatalError() }
+        
         urlSession.dataTask(with: url) { (data, response, error) in
+            guard let data = data else { fatalError() }
+            //Сделать try?
+            let dictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String : String]
             
+            let token = dictionary["token"]
+            complitionHandler(token, nil)
         }.resume()
     }
 }
