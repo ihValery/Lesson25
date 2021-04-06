@@ -8,6 +8,11 @@ class TaskListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+    }
+    
+    @IBAction func addNewTask(_ sender: UIBarButtonItem) {
+        if let viewController = storyboard?.instantiateViewController(identifier: "InputTaskViewController") as? InputTaskViewController {
+            present(viewController, animated: true, completion: nil)
+        }
     }
 }
