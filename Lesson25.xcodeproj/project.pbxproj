@@ -20,6 +20,7 @@
 		80BD9A7926172EB100CEF695 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BD9A7826172EB100CEF695 /* DataProviderTests.swift */; };
 		80BD9A7E2617442500CEF695 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BD9A7D2617442500CEF695 /* TaskCell.swift */; };
 		80BD9A842617BEF800CEF695 /* TaskCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BD9A832617BEF800CEF695 /* TaskCellTests.swift */; };
+		80C97F40261C73A600F51BFB /* Lesson25Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C97F3F261C73A600F51BFB /* Lesson25Tests.swift */; };
 		80D6179B2616274000EF5B09 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6179A2616274000EF5B09 /* Location.swift */; };
 		80D617A026162ADB00EF5B09 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6179F26162ADB00EF5B09 /* LocationTests.swift */; };
 		80D617A626163BFB00EF5B09 /* TaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D617A526163BFB00EF5B09 /* TaskManagerTests.swift */; };
@@ -70,6 +71,7 @@
 		80BD9A7826172EB100CEF695 /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
 		80BD9A7D2617442500CEF695 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		80BD9A832617BEF800CEF695 /* TaskCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellTests.swift; sourceTree = "<group>"; };
+		80C97F3F261C73A600F51BFB /* Lesson25Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson25Tests.swift; sourceTree = "<group>"; };
 		80D6179A2616274000EF5B09 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		80D6179F26162ADB00EF5B09 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		80D617A526163BFB00EF5B09 /* TaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTests.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				80BD9A822617BECD00CEF695 /* View */,
 				80D617B4261666E200EF5B09 /* Controller */,
 				80D617A426163BCB00EF5B09 /* Manager */,
+				80C97F3E261C736700F51BFB /* Supporting files */,
 				8088EA632615EBBA001FCEAE /* Info.plist */,
 			);
 			path = Lesson25Tests;
@@ -217,6 +220,14 @@
 				80BD9A832617BEF800CEF695 /* TaskCellTests.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		80C97F3E261C736700F51BFB /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				80C97F3F261C73A600F51BFB /* Lesson25Tests.swift */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 		80D617A426163BCB00EF5B09 /* Manager */ = {
@@ -386,6 +397,7 @@
 				80D617A626163BFB00EF5B09 /* TaskManagerTests.swift in Sources */,
 				80EC06E726198C4D00D1B77C /* APIClientTests.swift in Sources */,
 				80D617B62616671E00EF5B09 /* TaskListViewControllerTests.swift in Sources */,
+				80C97F40261C73A600F51BFB /* Lesson25Tests.swift in Sources */,
 				80EC06AC26186A1E00D1B77C /* DetailViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -654,6 +666,7 @@
 				CURRENT_PROJECT_VERSION = 104;
 				DEVELOPMENT_TEAM = 879U287R5Q;
 				INFOPLIST_FILE = "$(SRCROOT)/Lesson25/System32/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -675,6 +688,7 @@
 				CURRENT_PROJECT_VERSION = 104;
 				DEVELOPMENT_TEAM = 879U287R5Q;
 				INFOPLIST_FILE = "$(SRCROOT)/Lesson25/System32/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
