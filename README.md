@@ -25,6 +25,11 @@
  - 33. TokenAvailabilityTest. Генерируется token при успешной авторизации. (Общая картина выливаеться и связей token -> data -> completionHandler -> DataTask -> urlSession)
  - 34. JSONTests. Тесты на запросы. (При успешном входе в систему создается токен. - Вход в систему не удался. Ошибка возврата JSON. - Ошибка входа в систему, когда данные равны нулю. - Вход в систему, когда ошибка ответа возвращает ошибку.)
  - 35. AddNewTaskButtonTests. (Проверили существует ли кнопка и переходим ли мы по ней в новое окно для ввода)
+ - 36. SharingTaskManagerTest. Проверияем что у InputTaskViewController и DataProvider один и тот же taskManager.
+ - 37. NewTaskViewControllerDismissTest. Написали тест что наш контроллер после нажатия был отпущен.
+ - 38. TableViewReloadMethodTest. Тест что только что созданая Task отображаеться на главное экране. (Стандартный reloadDate  + свойство - modalView)
+ - 39. NotificationCenterTest. Передача task.
+ - 40. PushViewControllerTest. Тестирование DetailViewController и переход на него соотвественно с передачей task
 
 Схема и сущности
 
