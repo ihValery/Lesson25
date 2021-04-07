@@ -155,7 +155,10 @@ class InputTaskViewControllerTests: XCTestCase {
         mockInputTaskViewController.save()
         
         //Then
-        XCTAssertTrue(mockInputTaskViewController.isDismissed)
+        //Делать надо через новое свойство в closure
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+            XCTAssertTrue(mockInputTaskViewController.isDismissed)
+        }
     }
     
 }
