@@ -30,6 +30,8 @@ class InputTaskViewController: UIViewController {
             let task = Task(title: titleString!, description: descriptionString, location: location, date: date)
             self.taskManager.add(task: task)
         }
+        
+        dismiss(animated: true, completion: nil)
     }
     
     var dateFormatter: DateFormatter {
