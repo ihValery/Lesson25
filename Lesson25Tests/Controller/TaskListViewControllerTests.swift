@@ -54,23 +54,36 @@ class TaskListViewControllerTests: XCTestCase {
         XCTAssertEqual(target as? TaskListViewController, sut)
     }
     
-    func testAddNewTaspPresentNewTasViewController() {
-        XCTAssertNil(sut.presentedViewController)
+    func presentingNewTaskViewController() -> InputTaskViewController {
         
         guard let newTaskButton = sut.navigationItem.rightBarButtonItem,
               let action = newTaskButton.action
               else {
-            XCTFail()
-            return
+            return InputTaskViewController()
         }
+        //Добавление sut в качестве rootViewController нашего window
+        //Варнинг: Не можем создавать новые контроллеры с контроллера который находиться уже не на экране
+        //Так работают только тесты, мол не видим фактически нашего приложения
         UIApplication.shared.keyWindow?.rootViewController = sut
         
+        //Попытка выполнить action от кнопки
         sut.performSelector(onMainThread: action, with: newTaskButton, waitUntilDone: true)
-        XCTAssertNotNil(sut.presentedViewController)
-        
-        XCTAssertTrue(sut.presentedViewController is InputTaskViewController)
-        
-        let newTaskViewController = sut.presentedViewController as!InputTaskViewController
+
+        let newTaskViewController = sut.presentedViewController as! InputTaskViewController
+        return newTaskViewController
+    }
+    
+    func testAddNewTaspPresentNewTasViewController() {
+        let newTaskViewController = presentingNewTaskViewController()
         XCTAssertNotNil(newTaskViewController.titleTextField)
+    }
+    
+    func testSharesSameTaskManagerwithInputTaskViewController() {
+        let newTaskViewController = presentingNewTaskViewController()
+        
+        XCTAssertNotNil(sut.dataProvider.taskManager)
+        //В языке Swift есть также два оператора проверки на идентичность/тождественность
+        // (=== и !==), определяющие, ссылаются ли два указателя на один и тот же экземпляр объекта
+        XCTAssertTrue(newTaskViewController.taskManager === sut.dataProvider.taskManager)
     }
 }
