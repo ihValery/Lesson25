@@ -130,8 +130,32 @@ class InputTaskViewControllerTests: XCTestCase {
             //Удовлетвояет ожидание
             geocoderAnswer.fulfill()
         }
-        //Тайминг для ожидания - малол ли интернет плохой ))
+        //Тайминг для ожидания - малолли интернет плохой ))
         waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testSaveDismissesInputTaskViewController() {
+        //Given
+        let mockInputTaskViewController = MockInputTaskViewController()
+        
+        //Инициализируем тут, так как при создании через код они будут равны nil
+        //А мы уже не обращаемся к storyboardy
+        mockInputTaskViewController.titleTextField = UITextField()
+        mockInputTaskViewController.titleTextField.text = "Foo"
+        mockInputTaskViewController.descriptionTextField = UITextField()
+        mockInputTaskViewController.descriptionTextField.text = "Bar"
+        mockInputTaskViewController.locationTextField = UITextField()
+        mockInputTaskViewController.locationTextField.text = "Baz"
+        mockInputTaskViewController.addressTextField = UITextField()
+        mockInputTaskViewController.addressTextField.text = "Минск"
+        mockInputTaskViewController.dateTextField = UITextField()
+        mockInputTaskViewController.dateTextField.text = "04.04.21"
+        
+        //when
+        mockInputTaskViewController.save()
+        
+        //Then
+        XCTAssertTrue(mockInputTaskViewController.isDismissed)
     }
     
 }
@@ -157,4 +181,17 @@ extension InputTaskViewControllerTests {
             return CLLocation(latitude: mockCoordinate.latitude, longitude: mockCoordinate.longitude)
         }
     }
+}
+
+extension InputTaskViewControllerTests {
+    
+    class MockInputTaskViewController: InputTaskViewController {
+    
+        var isDismissed = false
+        
+        override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
+            isDismissed = true
+        }
+    }
+    
 }
