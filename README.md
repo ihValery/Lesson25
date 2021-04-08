@@ -35,6 +35,9 @@
  - 43. SaveDataTest. Тесты на сохранение наших задач.
  - 44. CheckingFunctionality.  # if targetEnvironment(simulator).
  - 45. FixingFoundBugs. Реализовали баг с незачеркивающейся выполненной таской.
+ - 46. UITests. Тестирование пользовательского интерфейса.
+ - 47. Coverage.
+
 
 Схема и сущности
 
