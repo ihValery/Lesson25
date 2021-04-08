@@ -32,6 +32,9 @@
  - 40. PushViewControllerTest. Тестирование DetailViewController и переход на него соотвественно с передачей task
  - 41. ModelSerializationTests. Для хранения используем pList file (Инициализатор через extension да еще и словарь(Dictionary) (запоминаем - работаем)) (Подготовили task для хранения в pList)
  - 42. SerializationIntoDictionaryTests.  Сохранение task в pList file.
+ - 43. SaveDataTest. Тесты на сохранение наших задач.
+ - 44. CheckingFunctionality.  # if targetEnvironment(simulator).
+ - 45. FixingFoundBugs. Реализовали баг с незачеркивающейся выполненной таской.
 
 Схема и сущности
 
