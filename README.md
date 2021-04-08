@@ -30,6 +30,7 @@
  - 38. TableViewReloadMethodTest. Тест что только что созданая Task отображаеться на главное экране. (Стандартный reloadDate  + свойство - modalView)
  - 39. NotificationCenterTest. Передача task.
  - 40. PushViewControllerTest. Тестирование DetailViewController и переход на него соотвественно с передачей task
+ - 41. ModelSerializationTests. Для хранения используем pList file (Инициализатор через extension да еще и словарь(Dictionary) (запоминаем - работаем)) (Подготовили task для хранения в pList)
 
 Схема и сущности
 
