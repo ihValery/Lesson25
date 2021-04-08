@@ -6,11 +6,14 @@ class TaskManagerTests: XCTestCase {
     var sut: TaskManager!
     
     override func setUpWithError() throws {
+        super.setUp()
         sut = TaskManager()
     }
 
     override func tearDownWithError() throws {
+        sut.removeAll()
         sut = nil
+        super.tearDown()
     }
 
     func testInitTaskManagerWithZeroTasks() {
@@ -85,5 +88,24 @@ class TaskManagerTests: XCTestCase {
         sut.add(task: Task(title: "Foo"))
         
         XCTAssertTrue(sut.tasksCount == 1)
+    }
+    
+    func testWhenTaskManagerRecreatedSavedTaskShouldBeWqual() {
+        var taskManager: TaskManager! = TaskManager()
+        let taskOne = Task(title: "Foo")
+        let taskTwo = Task(title: "Bar")
+        
+        taskManager.add(task: taskOne)
+        taskManager.add(task: taskTwo)
+        
+        //Отправляется, когда приложение перестает быть активным и теряет фокус.
+        NotificationCenter.default.post(name: UIApplication.willResignActiveNotification, object: nil)
+        
+        taskManager = nil
+        taskManager = TaskManager()
+        
+        XCTAssertEqual(taskManager.tasksCount, 2)
+        XCTAssertEqual(taskManager.task(at: 0), taskOne)
+        XCTAssertEqual(taskManager.task(at: 1), taskTwo)
     }
 }
