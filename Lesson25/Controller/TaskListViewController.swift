@@ -36,8 +36,4 @@ class TaskListViewController: UIViewController {
         detailViewController.task = task
         navigationController?.pushViewController(detailViewController, animated: true)
     }
-    
-    @IBAction func reloadDate(_ sender: Any) {
-        tableView.reloadData()
-    }
 }

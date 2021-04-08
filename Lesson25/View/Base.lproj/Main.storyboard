@@ -82,18 +82,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hHv-sg-L9m">
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="afs-rr-sgB">
-                                <connections>
-                                    <action selector="addNewTask:" destination="BYZ-38-t0r" id="ywN-gY-N4W"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="refresh" id="F9F-v9-Ly1">
-                                <connections>
-                                    <action selector="reloadDate:" destination="BYZ-38-t0r" id="gWb-fe-57z"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="afs-rr-sgB">
+                            <connections>
+                                <action selector="addNewTask:" destination="BYZ-38-t0r" id="ywN-gY-N4W"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="dataProvider" destination="0i1-ke-tTZ" id="Tlj-E6-02y"/>
