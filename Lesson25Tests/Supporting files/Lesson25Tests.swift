@@ -16,12 +16,8 @@ class Lesson25Tests: XCTestCase {
     func testInitialViewCOntrollerIsTaskListViewController() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
-        let rootViewController = navigationController.viewControllers.first as! TaskListViewController
+        let rootViewController = navigationController.viewControllers.first
         
         XCTAssertTrue(rootViewController is TaskListViewController)
     }
-    
-//    func <#name#>(<#parameters#>) -> <#return type#> {
-//        <#function body#>
-//    }
 }
