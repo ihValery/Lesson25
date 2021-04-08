@@ -48,7 +48,7 @@ class TaskManager {
     func save() {
         let taskDictionaries = self.tasks.map { $0.dict }
         guard taskDictionaries.count > 0 else {
-            try?FileManager.default.removeItem(at: tasksURL)
+            try? FileManager.default.removeItem(at: tasksURL)
             return
         }
         
@@ -70,11 +70,15 @@ class TaskManager {
     }
     
     func checkTask(at index: Int) {
-        doneTasks.append(tasks.remove(at: index))
+        var task = tasks.remove(at: index)
+        task.isDone.toggle()
+        doneTasks.append(task)
     }
     
     func unckeckTask(at index: Int) {
-        tasks.append(doneTasks.remove(at: index))
+        var taskDone = doneTasks.remove(at: index)
+        taskDone.isDone.toggle()
+        tasks.append(taskDone)
     }
     
     func doneTask(at index: Int) -> Task {
