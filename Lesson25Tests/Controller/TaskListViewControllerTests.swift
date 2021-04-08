@@ -64,7 +64,7 @@ class TaskListViewControllerTests: XCTestCase {
         //Добавление sut в качестве rootViewController нашего window
         //Варнинг: Не можем создавать новые контроллеры с контроллера который находиться уже не на экране
         //Так работают только тесты, мол не видим фактически нашего приложения
-        UIApplication.shared.keyWindow?.rootViewController = sut
+        UIApplication.shared.windows.filter { $0.isKeyWindow }.first?.rootViewController = sut
         
         //Попытка выполнить action от кнопки
         sut.performSelector(onMainThread: action, with: newTaskButton, waitUntilDone: true)
@@ -113,7 +113,8 @@ class TaskListViewControllerTests: XCTestCase {
     
     func testSelectedCellNotificationPushesDetailCiewController() {
         let mockNavigationController = MockNavigationController(rootViewController: sut)
-        UIApplication.shared.keyWindow?.rootViewController = sut
+        UIApplication.shared.windows.filter { $0.isKeyWindow }.first?.rootViewController = sut
+//        UIApplication.shared.keyWindow?.rootViewController = sut
         
         sut.loadViewIfNeeded()
         
